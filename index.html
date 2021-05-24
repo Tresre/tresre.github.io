@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <style>
-h1 {
+.typecontainer {
+    height: 100px;
+  	position: center;
+}
+.typecenter {
 	text-align: center;
-	font-size: 30px;
-	padding: 500px;
+	margin: 0;
+	position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+    font-size: 30px;
 }
 body {
 	background-color: #202020;
@@ -51,16 +59,17 @@ h2 {
 	<br>
     <hr width="80%;">
 </h2>
-
-<h1>
-  <div class="type-wrap">
-    <div id="typed-strings">
-      <span>Hi, I'm<strong> Tresre</strong>.</span>
-      <span>I'm a Minecraft Skript/Server Developer.</span>
-      <span>I also do some coding.</span>
+<div class="typecontainer">
+  <div class="typecenter">
+    <div class="type-wrap">
+      <div id="typed-strings">
+        <span>Hi, I'm<strong> Tresre</strong>.</span>
+        <span>I'm a Minecraft Skript/Server Developer.</span>
+        <span>I also do some coding.</span>
+      </div>
+      <span id="typed"></span>
     </div>
-    <span id="typed"></span>
   </div>
-</h1>
+</div>
 </body>
 </html>
