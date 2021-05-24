@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-	background-color: #202020;
+	background-color: #131213;
 	font-family: sans-serif;
 	font-weight: 600;
 	color: white;
@@ -10,25 +11,102 @@ body {
 nav {
 	color: white;
 	font-size: 15px;
-    	display: inline;
-    	padding: 40px
+    display: inline;
+    padding: 40px
 }
 h2 {
 	text-align: center;
 	margin: auto;
-    	width: 50%;
+    width: 50%;
 	max-width: 450px;
    	min-width: 450px;
+}
+h3 {
+	text-align: right;
+    font-size: 10px;
+}
+.vertical-menu {
+  width: 100%;
+}
+
+.vertical-menu a {
+  background-color: #1e1e1e;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.vertical-menu a:hover {
+  background-color: #303030;
+}
+
+.vertical-menu a.active {
+  background-color: #303030;
+  color: white;
+}
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+  background-color: #1e1e1e;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  height: 17px;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #131213;
 }
 </style>
 
 <title>Tresre.dev | Products</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav">
+  <a href="#home"></a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 <body>
 <h2>
 	<a style="text-decoration:none" href="https://tresre.github.io">
-    	<nav class="gray">Home</nav>
-    	</a>
+    <nav class="gray">Home</nav>
+    </a>
    	<a style="text-decoration:none" href="products">
    	<nav class="gray">Products</nav>
    	</a>
@@ -39,3 +117,17 @@ h2 {
 	<br>
 	<hr width="80%;">
 </h2>
+
+<h1>Products</h1>
+
+<div class="vertical-menu">
+  <a href="#">
+  <img src="https://i.ibb.co/2Zw6ZRb/Page1.png" style= "width:355px; height:200px; border-radius: 15px; position: absoulte;" alt="Aquaanticheat Pic"> 
+  </a>
+  <br>
+</div>
+
+</body>
+</html>
+
+
