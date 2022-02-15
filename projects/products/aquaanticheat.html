@@ -2,6 +2,14 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
 body {
 	background-color: #131213;
 	font-family: sans-serif;
@@ -16,11 +24,43 @@ nav {
     margin: auto;
 }
 h2 {
+	position: relative;
+	top: 20px;
+	right: 0px;
+	left: 0px;
+	display: table;
 	text-align: center;
 	margin: auto;
-    width: 50%;
-	max-width: 450px;
-   	min-width: 450px;
+	width: 80%;
+    max-width: 450px;
+}
+h3 {
+	position: fixed;
+	bottom: 0px;
+	left: 15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	width: 30%;
+	min-width: 240px;
+	max-width: 410px;
+	height: 90px;
+	border-radius: 500px;
+}
+h4 {
+	display: inline-block;
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+	text-align: center;
+	margin-left: auto;
+   	margin-right: auto;
+	padding: 10px;
+   	width: 67px;
+   	height: 67px;
+  	border-radius: 500px;
+	background-color: #1a1c1f;
 }
 h3 {
 	text-align: right;
