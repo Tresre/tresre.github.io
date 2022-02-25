@@ -2,6 +2,12 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+html {
+	background-color: #131213;
+}
+bold {
+	color: #a30b00
+}
 .typecontainer {
 	height: 100%;
 }
@@ -14,15 +20,9 @@
   	transform: translateY(-50%);
 	font-size: 30px;
 	left: 0px;
-}
-body {
-	background-color: #131213;
-	font-family: sans-serif;
+    font-family: sans-serif;
 	font-weight: 600;
 	color: white;
-}
-strong {
-	color: #a30b00
 }
 .socials {
 	position: relative;
@@ -35,10 +35,10 @@ strong {
 	width: 100%;
     max-width: 600px;
 }
-h3 {
+.discord {
 	position: fixed;
-	bottom: 0px;
-	left: 15px;
+	bottom: 10px;
+	left: 10px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -49,11 +49,11 @@ h3 {
 	height: 90px;
 	border-radius: 500px;
 }
-h4 {
+.contact {
 	display: inline-block;
 	position: fixed;
-	bottom: 0px;
-	right: 20px;
+	bottom: 10px;
+	right: 10px;
 	text-align: center;
 	margin-left: auto;
    	margin-right: auto;
@@ -62,12 +62,6 @@ h4 {
    	height: 67px;
   	border-radius: 500px;
 	background-color: #1a1c1f;
-}
-a {
-	padding: 10px;
-}
-img {
-	width: 11%;
 }
 </style>
 
@@ -86,7 +80,7 @@ img {
   <div class="typecenter">
     <div class="type-wrap">
       <div id="typed-strings">
-        <span>Hi, I'm<strong> Tresre</strong>.</span>
+        <span>Hi, I'm<bold> Tresre</bold>.</span>
         <span>I'm a Server & Web Developer.</span>
         <span>I work in Skript, HTML, CSS, & JS.</span>
       </div>
@@ -95,19 +89,19 @@ img {
   </div>
 </div>
 <div class="socials">
-    <a href="social/discord" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/T1zkrRm/discord.png" alt="Discord Pic"></a> 
-    <a href="social/twitter" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/j3q8Ryw/twitter.png" alt="Twitter Pic"></a>
-    <a href="social/youtube" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/SNMyygn/youtube.png" alt="Youtube Pic"></a>
-    <a href="social/twitch" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/wdscH7B/twitch.png" alt="Twitch Pic"></a>
+    <a href="social/discord" target="_blank" rel="noopener noreferrer" style="padding: 10px;"><img src="https://i.ibb.co/T1zkrRm/discord.png" alt="Discord Pic" style="width: 11%;"></a> 
+    <a href="social/twitter" target="_blank" rel="noopener noreferrer" style="padding: 10px;"><img src="https://i.ibb.co/j3q8Ryw/twitter.png" alt="Twitter Pic" style="width: 11%;"></a>
+    <a href="social/youtube" target="_blank" rel="noopener noreferrer" style="padding: 10px;"><img src="https://i.ibb.co/SNMyygn/youtube.png" alt="Youtube Pic" style="width: 11%;"></a>
+    <a href="social/twitch" target="_blank" rel="noopener noreferrer" style="padding: 10px;"><img src="https://i.ibb.co/wdscH7B/twitch.png" alt="Twitch Pic" style="width: 11%;"></a>
 </div>
 </body>
 
-<h3>
+<div class="discord">
 	<iframe width="500px" height="90px" src="https://lanyard.cnrad.dev/api/225399479790993408?borderRadius=0px&idleMessage=Developing%20Something%20Else..." title="Discord" frameborder="0"></iframe>
-</h3>
+</div>
 
-<h4>
-	<b href="contact"><img style="width:90%; padding: 4px;" src="https://i.ibb.co/tYDj8DY/darker.png" alt="mail" border="0"></b>
-</h4>
+<div class="contact">
+	<a href="contact"><img style="width:90%; padding: 4px;" src="https://i.ibb.co/tYDj8DY/darker.png" alt="mail" border="0"></a>
+</div>
 
 </html>
