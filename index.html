@@ -5,9 +5,24 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300);
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:600;700);
 html {
-	background-color: #010409;
     overflow: scroll;
     overflow-x: hidden;
+}
+.blackbackground {
+	background-color: #010409;
+    height: 1000px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.whitebackground {
+	background-color: #f0f0f0;
+    height: 1000px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 1000px;
 }
 ::-webkit-scrollbar {
     width: 0;
@@ -69,7 +84,7 @@ bold {
 	background-color: #1a1c1f;
 }
 header {
-z-index: 2;
+	z-index: 2;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -113,6 +128,7 @@ z-index: 2;
 
 <title>Tresre.dev</title>
 
+<div class="blackbackground">
 <header>
 	<div class="logo">
 		<a href="../" class="logo"><img src="https://i.ibb.co/JR15RFx/white-3.png" alt="logo" style="height:50px"></a>
@@ -166,6 +182,8 @@ z-index: 2;
 <div class="contact">
 	<a href="contact"><img style="width:90%; padding: 4px;" src="https://i.ibb.co/tYDj8DY/darker.png" alt="mail" border="0"></a>
 </div>
+</div>
+<div class="whitebackground">
 <br>
 <br>
 <br>
@@ -236,6 +254,6 @@ z-index: 2;
 <br>
 <br>
 <br>
-
+</div>
 
 </html>
