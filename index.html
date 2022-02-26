@@ -2,6 +2,8 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:600;700);
 html {
 	background-color: #010409;
     overflow: scroll;
@@ -79,6 +81,23 @@ z-index: 2;
     backdrop-filter: blur(1em);
     border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
 }
+.navbar-nav {
+  display: flex;
+  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    float: none;
+  }
+}
 </style>
 
 <title>Tresre.dev</title>
@@ -86,6 +105,10 @@ z-index: 2;
 <header>
 	<img src="https://i.ibb.co/JR15RFx/white-3.png" alt="logo" style="height:50px">
 </header>
+
+<div class="navbar-nav">
+	<a href="https://twitter.com/messages/compose?recipient_id=733775457993252864" data-rb-event-key="https://twitter.com/messages/compose?recipient_id=733775457993252864" class="nav-link">Contact</a>
+</div>
 
 
 <head>
