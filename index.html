@@ -8,6 +8,26 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #010409;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #575757;
+}
+
 .blackbackground {
 	background-color: #010409;
     height: 800px;
@@ -23,10 +43,6 @@ html {
     position: fixed;
     left: 0;
     top: 1000px;
-}
-::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
 }
 bold {
 	color: #a30b00;
