@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     typed.destroy();
   });
   document.querySelector('.loop').addEventListener('click', function() {
-    toggleLoop(typed2);
+    toggleLoop(typed);
   });
 
   var typed2 = new Typed('#typed2', {
