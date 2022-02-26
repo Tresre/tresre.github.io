@@ -82,33 +82,19 @@ z-index: 2;
     border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
 }
 .navbar-nav {
-  display: flex;
-  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-
-  .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .dropdown-menu {
-    position: static;
-    float: none;
-  }
-}
+  font-family: Comfortaa;
 </style>
 
 <title>Tresre.dev</title>
 
 <header>
-	<img src="https://i.ibb.co/JR15RFx/white-3.png" alt="logo" style="height:50px">
+	<div class="logo">
+		<img src="https://i.ibb.co/JR15RFx/white-3.png" alt="logo" style="height:50px">
+	</div>
+    <div class="navbar-nav">
+		<a href="https://google.com" class="nav-link">Contact</a>
+	</div>
 </header>
-
-<div class="navbar-nav">
-	<a href="https://twitter.com/messages/compose?recipient_id=733775457993252864" data-rb-event-key="https://twitter.com/messages/compose?recipient_id=733775457993252864" class="nav-link">Contact</a>
-</div>
 
 
 <head>
