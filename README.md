@@ -1,3 +1,3 @@
 # tresre.github.io
 
-test
+Custom website using HTML/CSS and Typed.js Library.
