@@ -83,16 +83,35 @@ z-index: 2;
 }
 .navbar-nav {
   font-family: Comfortaa;
+  
+}
+.navbutton {
+	color: #969696;
+    text-decoration: none;
+}
+.logo {
+	transform: scale(1);
+	transition: 0.3s;
+}
+
+.logo:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+	transform: scale(1.075) rotate(1deg);
+}
+
+.logo:active {
+	transform: scale(0.8);
+}
 </style>
 
 <title>Tresre.dev</title>
 
 <header>
 	<div class="logo">
-		<img src="https://i.ibb.co/JR15RFx/white-3.png" alt="logo" style="height:50px">
+		<a href="../" class="navbutton"><img src="https://i.ibb.co/JR15RFx/white-3.png" alt="logo" style="height:50px"></a>
 	</div>
     <div class="navbar-nav">
-		<a href="https://google.com" class="nav-link">Contact</a>
+		<a href="https://google.com" class="navbutton">Contact</a>
 	</div>
 </header>
 
