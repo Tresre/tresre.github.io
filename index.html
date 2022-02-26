@@ -83,7 +83,8 @@ z-index: 2;
 }
 .navbar-nav {
   font-family: Comfortaa;
-  
+  font-size: 20px;
+  padding: 15px;
 }
 .navbutton {
 	color: #969696;
@@ -93,7 +94,18 @@ z-index: 2;
 	transform: scale(1);
 	transition: 0.3s;
 }
-
+.navbar-nav:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+	transform: scale(1.075) rotate(1deg);
+}
+.navbar-nav:active {
+	transform: scale(0.8);
+}
+.logo {
+	transform: scale(1);
+	transition: 0.3s;
+    right-padding: 10px;
+}
 .logo:hover {
 	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
 	transform: scale(1.075) rotate(1deg);
@@ -112,6 +124,12 @@ z-index: 2;
 	</div>
     <div class="navbar-nav">
 		<a href="https://google.com" class="navbutton">Contact</a>
+	</div>
+    <div class="navbar-nav">
+		<a href="https://google.com" class="navbutton">Discord</a>
+	</div>
+    <div class="navbar-nav">
+		<a href="https://google.com" class="navbutton">Twitter</a>
 	</div>
 </header>
 
