@@ -318,9 +318,14 @@
             <a href="https://www.youtube.com/channel/UCQW-NEKSiQoa2KKrPH-HH-Q" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://i.ibb.co/SNMyygn/youtube.png" alt="Youtube Pic" style="width: 50px;"></a>
             <a href="https://www.twitch.tv/tresreee" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://i.ibb.co/wdscH7B/twitch.png" alt="Twitch Pic" style="width: 50px;"></a>
             <div class="madeby">
-               Made By Tresre 2022
+               Made By Tresre <span id="year"></span>
             </div>
          </div>
       </div>
    </body>
+   <script>
+     var today = new Date();
+     let year = today.getFullYear();
+     document.getElementById("year").innerHTML = year;
+   </script>
 </html>
