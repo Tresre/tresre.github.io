@@ -148,18 +148,65 @@
       	transform: scale(0.95);
       }
       .logo {
+      	animation-name: logo-animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+        display: inline-block;
       	transform: scale(1);
         transition: all .2s linear;
       	padding-right: 2%;
       	padding-left: 2%;
       }
       .logo:hover {
+      	animation-name: h-logo-animation;
+        animation-duration: 0.3s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
       	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
-      	transform: scale(1.075) rotate(1deg);
+      	transform: scale(1.075);
       }
       .logo:active {
+      	animation-name: c-logo-animation;
+        animation-duration: 0.3s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
       	transform: scale(0.95);
       }
+      @keyframes logo-animation {
+        0% {
+            transform: rotate(3deg);
+        }
+        50% {
+            transform: rotate(-3deg);
+        }
+        100% {
+            transform: rotate(3deg);
+        }
+	  }
+      @keyframes h-logo-animation {
+        0% {
+            transform: scale(1.03) rotate(3deg);
+        }
+        50% {
+            transform: scale(1.03) rotate(-3deg);
+        }
+        100% {
+            transform: scale(1.03) rotate(3deg);
+        }
+	  }
+	  @keyframes c-logo-animation {
+        0% {
+            transform: scale(0.97) rotate(3deg);
+        }
+        50% {
+            transform: scale(0.97) rotate(-3deg);
+        }
+        100% {
+            transform: scale(0.97) rotate(3deg);
+        }
+	  }
+      
       .portfolio {
       	position: relative;
       	top: 20px;
