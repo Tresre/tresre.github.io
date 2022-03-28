@@ -158,20 +158,22 @@
       	padding-right: 2%;
       	padding-left: 2%;
       }
-      .logo:hover {
-      	animation-name: h-logo-animation;
-        animation-duration: 0.3s;
-        animation-iteration-count: infinite;
-        transform-origin: 50% 50%;
-      	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
-      	transform: scale(1.075);
-      }
-      .logo:active {
-      	animation-name: c-logo-animation;
-        animation-duration: 0.3s;
-        animation-iteration-count: infinite;
-        transform-origin: 50% 50%;
-      	transform: scale(0.95);
+      @supports (backdrop-filter: blur(15px)) {
+        .logo:hover {
+          animation-name: h-logo-animation;
+          animation-duration: 0.5s;
+          animation-iteration-count: infinite;
+          transform-origin: 50% 50%;
+          filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+          transform: scale(1.075);
+        }
+        .logo:active {
+          animation-name: c-logo-animation;
+          animation-duration: 0.5s;
+          animation-iteration-count: infinite;
+          transform-origin: 50% 50%;
+          transform: scale(0.95);
+        }
       }
       @keyframes logo-animation {
         0% {
