@@ -151,31 +151,15 @@
       	animation: logo-animation 2s ease-in-out infinite;
         transform-origin: 50% 50%;
         display: inline-block;
-      	transform: scale(1);
-        transition: all .2s;
+        transition: all .3s;
       	padding-right: 2%;
       	padding-left: 2%;
       }
       .logo:hover {
-        animation: logo-animation 2s ease-in-out infinite;
         filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
       }
       .logo:active {
-        animation: logo-animation 2s ease-in-out infinite;
         filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
-      }
-      @supports (backdrop-filter: blur(15px)) {
-        .logo:hover {
-          animation: h-logo-animation 0.5s ease-in-out infinite;
-          transform-origin: 50% 50%;
-          filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
-          transform: scale(1.075);
-        }
-        .logo:active {
-          animation: c-logo-animation 0.5s ease-in-out infinite;
-          transform-origin: 50% 50%;
-          transform: scale(0.95);
-        }
       }
       @keyframes logo-animation {
         0% {
@@ -186,28 +170,6 @@
         }
         100% {
             transform: rotate(3deg);
-        }
-	  }
-      @keyframes h-logo-animation {
-        0% {
-            transform: scale(1.03) rotate(3deg);
-        }
-        50% {
-            transform: scale(1.03) rotate(-3deg);
-        }
-        100% {
-            transform: scale(1.03) rotate(3deg);
-        }
-	  }
-	  @keyframes c-logo-animation {
-        0% {
-            transform: scale(0.97) rotate(3deg);
-        }
-        50% {
-            transform: scale(0.97) rotate(-3deg);
-        }
-        100% {
-            transform: scale(0.97) rotate(3deg);
         }
 	  }
       
