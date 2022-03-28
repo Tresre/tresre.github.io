@@ -148,18 +148,21 @@
       	transform: scale(0.95);
       }
       .logo {
-      	animation: logo-animation 2s ease-in-out infinite;
+      	animation-name: logo-animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
         transform-origin: 50% 50%;
         display: inline-block;
-        transition: all .3s;
+      	transform: scale(1);
+        transition: all .2s linear;
       	padding-right: 2%;
       	padding-left: 2%;
       }
       .logo:hover {
-        filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+      	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
       }
       .logo:active {
-        filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+      	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.50));
       }
       @keyframes logo-animation {
         0% {
