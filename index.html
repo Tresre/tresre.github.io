@@ -159,10 +159,16 @@
       	padding-left: 2%;
       }
       .logo:hover {
+      	animation-name: logo-animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
       	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
       }
       .logo:active {
-      	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.50));
+      	animation-name: logo-animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.2));
       }
       @keyframes logo-animation {
         0% {
