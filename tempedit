@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300);
+      @import url(https://fonts.googleapis.com/css?family=Comfortaa:600;700);
+      @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
+      html {
+      	overflow: overlay;
+        scroll-behavior: smooth;
+      }
+      *::-webkit-scrollbar {
+  		width: 10px;
+      }
+      *::-webkit-scrollbar-track {
+  		opacity: 1;
+      }
+      *::-webkit-scrollbar-thumb {
+  		background-color: #888;
+  		border-radius: 0.5rem;
+      }
+      *::-webkit-scrollbar-thumb:hover {
+  		background-color: #575757;
+      }
+      .blackbackground {
+      	background-color: #010409;
+      	height: 800px;
+      	width: 100%;
+      	position: absolute;
+      	top: 0;
+      	left: 0;
+      }
+      .graybackground {
+      	background-color: #1e1e1e;
+      	height: 1620px;
+      	width: 100%;
+      	position: absolute;
+      	left: 0;
+      	top: 800px;
+      }
+      bold {
+      	color: #a30b00;
+      }
+      .typecontainer {
+      	height: 100%;
+      }
+      .typecenter {
+      	width: 99.7%;
+      	text-align: center;
+      	margin: 0px;
+      	position: absolute;
+      	top: 45%;
+      	font-size: 30px;
+      	left: 0px;
+      	font-family: sans-serif;
+      	font-weight: 600;
+      	color: white;
+      }
+      .staticwelcome {
+      	width: 100%;
+      	text-align: center;
+      	margin: 0px;
+      	position: absolute;
+      	top: 38%;
+      	font-size: 40px;
+      	left: 0px;
+      	font-family: sans-serif;
+      	font-weight: 600;
+      	color: white;
+      }
+      .socials {
+      	position: relative;
+      	top: 35px;
+      	display: table;
+      	text-align: center;
+      	margin: auto;
+      }
+      .madeby {
+      	text-align: center;
+      	position: relative;
+      	font-size: 20px; 
+      	text-decoration: none;
+      	font-family: Source Code Pro;
+      	font-weight: 600;
+      	color: #969696;
+      }
+      .discord {
+      	position: relative;
+      	bottom: -600px;
+      	text-align: center;
+      	margin-left: auto;
+      	margin-right: auto;
+      	overflow: hidden;
+      	width: 30%;
+      	min-width: 240px;
+      	max-width: 410px;
+      	height: 90px;
+      	border-radius: 500px;
+      }
+      .header {
+      	z-index: 2;
+      	width: 100%;
+      	position: fixed;
+      	top: 0;
+      	left: 0;
+      	padding: 1.5rem;
+      	display: flex;
+      	background: #262626;
+      	background: transparent;
+      	border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+        background-color: rgba(38, 38, 38, .9);
+      }
+      @supports (backdrop-filter: blur(15px)) {
+      	.header {
+          z-index: 2;
+          width: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          padding: 1.5rem;
+          display: flex;
+          background: #262626;
+          background: transparent;
+          border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+          backdrop-filter: blur(15px);
+        }
+      }
+      .navbar-nav {
+      	font-family: Comfortaa;
+      	font-size: 20px;
+      	padding: 15px;
+      	max-padding: 15px;
+      	padding-left: 1%;
+      	padding-right: 1%;
+      	max-padding-left: 1px;
+      	max-padding-right: 1px;
+        transition: all .1s linear;
+      }
+      .navbar-button {
+      	color: #969696;
+      	text-decoration: none;
+      }
+      .navbar-nav:hover {
+      	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+      	transform: scale(1.075) rotate(1deg);
+      }
+      .navbar-nav:active {
+      	transform: scale(0.95);
+      }
+      .logo {
+      	animation-name: logo-animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+        display: inline-block;
+      	transform: scale(1);
+        transition: all .2s linear;
+      	padding-right: 2%;
+      	padding-left: 2%;
+      }
+      .logo:hover {
+      	animation-name: logo-animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+      }
+      .logo:active {
+      	animation-name: logo-animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.2));
+      }
+      @keyframes logo-animation {
+        0% {
+            transform: rotate(3deg);
+        }
+        50% {
+            transform: rotate(-3deg);
+        }
+        100% {
+            transform: rotate(3deg);
+        }
+	  }
+      
+      .portfolio {
+      	position: relative;
+      	top: 20px;
+      	display: inline-block;
+
+      	font-family: Source Code Pro;
+      }
+      .portfolio-box {
+      	background-color: #13151a;
+      	color: white;
+      	padding: 12px;
+      	border-radius: 5px;
+      	font-size: 15px;
+      	text-align: left;
+        transition: all .2s linear;
+      }
+      .portfolio-box-container {
+      	padding: 18px;
+        float: left;
+        width: 50%;
+        max-width: 370px;
+        min-width: 100px;
+        text-align: center;
+        margin: auto;
+      }
+      .portoflio-text-container {
+      	margin-left: 10px;
+      	margin-right: 10px;
+      	margin-top: 5px;
+      	margin-bottom: 5px;
+      }
+      .portfolio-title {
+      	text-align: center;
+      	font-size: 40px;
+      	font-family: Source Code Pro;
+      	font-weight: 600;
+      	color: #969696;
+      }
+      .portfolio-title-container {
+      	display: inline-block;
+      }
+      .portfolio-box:hover {
+      	transform: scale(1.05) rotate(0.75deg);
+      }
+      .portfolio-box:active {
+      	transform: scale(0.95);
+      }
+   </style>
+   <head>
+      <meta charset="UTF-8">
+      <script src="lib/typed.js" type="text/javascript"></script>
+      <script src="assets/demos.js"></script>
+      <title>Tresre.dev</title>
+      <link rel="icon" type="image/png" href="https://i.ibb.co/R9KnByj/favicon.png">
+   </head>
+   <div class="blackbackground">
+      <div class="header">
+         <div class="logo">
+            <a href="#" class="logo"><img src="https://i.ibb.co/C5ch5sJ/white-3.png" alt="logo" style="height:50px"></a>
+         </div>
+         <div class="navbar-nav">
+            <a href="https://twitter.com/messages/compose?recipient_id=1128488783308054528&text=Hello!%20I%20need%20help%20with:%20" target="_blank" rel="noopener noreferrer" class="navbar-button">Contact</a>
+         </div>
+         <div class="navbar-nav">
+            <a href="https://discord.gg/PkZtTbvBRG" target="_blank" rel="noopener noreferrer" class="navbar-button">Discord</a>
+         </div>
+         <div class="navbar-nav">
+            <a href="https://shop.minehut.com/collections/framework" target="_blank" rel="noopener noreferrer" class="navbar-button">Market</a>
+         </div>
+      </div>
+   </div>
+   <br> <br>
+   <body>
+      <div class="staticwelcome">
+         Hi, I'm
+         <bold> Tresre</bold>.
+      </div>
+      <div class="typecontainer">
+         <div class="typecenter">
+            I'm a 
+            <div id="typed-strings">
+               <span>Skript Developer.</span>
+               <span>Server Developer.</span>
+               <span>Web Designer.</span>
+               <span>Moderator.</span>
+            </div>
+            <span id="typed"></span>
+         </div>
+      </div>
+      <div class="discord">
+         <iframe width="500px" height="90px" src="https://lanyard.cnrad.dev/api/225399479790993408?borderRadius=0px&idleMessage=Developing%20Something%20Else..." title="Discord" frameborder="0"></iframe>
+      </div>
+      </div>
+      <div class="graybackground">
+         <br>
+         <br>
+         <div class="portfolio-title">
+         	<div class="portfolio-title-container">
+            	Portfolio
+            	<br>
+            	
+            </div>
+         </div>
+         <hr style="width:65%; border: solid 1px #969696; max-width: 450px;">
+         <div class="portfolio">
+         	<a href="https://shop.minehut.com/collections/framework" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+              <div class="portfolio-box-container">
+                 <div class="portfolio-box" style="padding: 15px;">
+                    <img src="https://i.ibb.co/7vV8Kqc/Untitled-9.png" style= "width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="Minehut Market">
+                    <div class="portoflio-text-container">
+                       Minehut Market
+                       <br>
+                       <b style="font-size:12px; font-weight: 100;">Developing custom skripts for sale in a large playerbase of tens of thousands of players.</b>
+                       <br>
+                    </div>
+                 </div>
+              </div>
+			</a>
+            <a href="https://discord.gg/mTTbug8" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+              <div class="portfolio-box-container">
+                 <div class="portfolio-box" style="padding: 15px;">
+                    <img src="https://i.ibb.co/kXF5Jpg/Untitled-5.png" style= "width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="ProHeist"> 
+                    <div class="portoflio-text-container">
+                       ProHeist
+                       <br>
+                       <b style="font-size:12px; font-weight: 100;">Semi-Roleplay storyline server about robbing stores, pulling heists, and making money.</b>
+                       <br>
+                    </div>
+                 </div>
+              </div>
+			</a>
+            <a href="https://discord.gg/YbZ7Sa9VDt" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+              <div class="portfolio-box-container">
+                 <div class="portfolio-box" style="padding: 15px;">
+                    <img src="https://i.ibb.co/q9DzD84/Untitled-6.png" style= "width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="Idler"> 
+                    <div class="portoflio-text-container">
+                       Idler
+                       <br>
+                       <b style="font-size:12px; font-weight: 100;">AFK PVP arena server, where players idle for money to buy blocks, weapons, and more.</b>
+                       <br>
+                    </div>
+                 </div>
+              </div>
+			</a>
+            <a href="https://discord.gg/3YHWN65" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+              <div class="portfolio-box-container">
+                 <div class="portfolio-box" style="padding: 15px;">
+                    <img src="https://i.ibb.co/r70g9Fq/Untitled-7.png" style= "width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="TriviaK"> 
+                    <div class="portoflio-text-container">
+                       TriviaK
+                       <br>
+                       <b style="font-size:12px; font-weight: 100;">Live Trivia server, using advanced hologram systems and automatic scoring to play trivia.</b>
+                       <br>
+                    </div>
+                 </div>
+              </div>
+			</a>
+         </div>
+         <div class="socials">
+            <a href="https://discord.gg/PkZtTbvBRG" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://i.ibb.co/T1zkrRm/discord.png" alt="Discord Pic" style="width: 50px;"></a> 
+            <a href="https://twitter.com/tresreee" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://i.ibb.co/j3q8Ryw/twitter.png" alt="Twitter Pic" style="width: 50px;"></a>
+            <a href="https://www.youtube.com/channel/UCQW-NEKSiQoa2KKrPH-HH-Q" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://i.ibb.co/SNMyygn/youtube.png" alt="Youtube Pic" style="width: 50px;"></a>
+            <a href="https://www.twitch.tv/tresreee" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://i.ibb.co/wdscH7B/twitch.png" alt="Twitch Pic" style="width: 50px;"></a>
+            <div class="madeby">
+               Made By Tresre <span id="year"></span>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script>
+     var today = new Date();
+     let year = today.getFullYear();
+     document.getElementById("year").innerHTML = year;
+   </script>
+</html>
