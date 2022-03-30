@@ -183,11 +183,14 @@
 	  }
       
       .portfolio {
-      	position: relative;
+      	position: abosolute;
       	top: 20px;
-      	display: inline-block;
-
+      	display: table;
       	font-family: Source Code Pro;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        border: 10px solid;
       }
       .portfolio-box {
       	background-color: #13151a;
@@ -201,9 +204,9 @@
       .portfolio-box-container {
       	padding: 18px;
         float: left;
-        width: 50%;
+        width: 10%;
         max-width: 370px;
-        min-width: 100px;
+        min-width: 270px;
         text-align: center;
         margin: auto;
       }
