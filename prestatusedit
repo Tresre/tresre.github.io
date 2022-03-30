@@ -8,6 +8,7 @@
       html {
       	overflow: overlay;
         scroll-behavior: smooth;
+        background-color: #1e1e1e;
       }
       *::-webkit-scrollbar {
   		width: 10px;
@@ -31,8 +32,7 @@
       	left: 0;
       }
       .graybackground {
-      	background-color: #1e1e1e;
-      	height: 1620px;
+      	height: 100%;
       	width: 100%;
       	position: absolute;
       	left: 0;
@@ -74,6 +74,7 @@
       	display: table;
       	text-align: center;
       	margin: auto;
+        padding-bottom: 15px;
       }
       .madeby {
       	text-align: center;
@@ -186,9 +187,11 @@
       	position: abosolute;
       	top: 20px;
         padding: 5px;
+        padding-top: 10px;
       	display: table;
       	font-family: Source Code Pro;
         width: 90%;
+        max-width: 700px;
         text-align: center;
         margin: auto;
       }
@@ -231,6 +234,15 @@
       	transform: scale(0.95);
       }
    </style>
+   <script>
+     function autoScroll() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+     }
+   </script>
    <head>
       <meta charset="UTF-8">
       <script src="lib/typed.js" type="text/javascript"></script>
@@ -241,7 +253,7 @@
    <div class="blackbackground">
       <div class="header">
          <div class="logo">
-            <a href="#" class="logo"><img src="https://i.ibb.co/C5ch5sJ/white-3.png" alt="logo" style="height:50px"></a>
+            <a onclick = "autoScroll()" class="logo"><img src="https://i.ibb.co/C5ch5sJ/white-3.png" alt="logo" style="height:50px"></a>
          </div>
          <div class="navbar-nav">
             <a href="https://twitter.com/messages/compose?recipient_id=1128488783308054528&text=Hello!%20I%20need%20help%20with:%20" target="_blank" rel="noopener noreferrer" class="navbar-button">Contact</a>
