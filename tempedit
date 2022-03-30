@@ -185,12 +185,12 @@
       .portfolio {
       	position: abosolute;
       	top: 20px;
+        padding: 5px;
       	display: table;
       	font-family: Source Code Pro;
         width: 90%;
         text-align: center;
         margin: auto;
-        border: 10px solid;
       }
       .portfolio-box {
       	background-color: #13151a;
@@ -202,13 +202,11 @@
         transition: all .2s linear;
       }
       .portfolio-box-container {
-      	padding: 18px;
-        float: left;
+      	padding: 10px;
+        display: inline-block;
         width: 10%;
         max-width: 370px;
         min-width: 270px;
-        text-align: center;
-        margin: auto;
       }
       .portoflio-text-container {
       	margin-left: 10px;
@@ -336,7 +334,7 @@
                     <div class="portoflio-text-container">
                        TriviaK
                        <br>
-                       <b style="font-size:12px; font-weight: 100;">Live Trivia server, using advanced hologram systems and automatic scoring to play trivia.</b>
+                       <b style="font-size:12px; font-weight: 100;">Live Trivia server, using advanced hologram and scoring systems to play trivia.</b>
                        <br>
                     </div>
                  </div>
