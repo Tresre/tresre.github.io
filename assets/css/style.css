@@ -1,13 +1,15 @@
 #particles-js {
 	background-color: transparent;
-	position: absolute;
+	position: relative;
 	filter: blur(1px);
 	overflow: hidden;
-	height: 700px;
+	height: 745px;
+	width: 100%;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	z-index: 0;
 	opacity: 50%;
+	border: 1px solid green;
 }
