@@ -1,0 +1,30 @@
+#particles-js {
+	background-color: transparent;
+	position: relative;
+	filter: blur(1px);
+	overflow: hidden;
+	height: 745px;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	opacity: 50%;
+	border: 1px solid green;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
