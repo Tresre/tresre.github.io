@@ -1,0 +1,13 @@
+#particles-js {
+	background-color: transparent;
+	position: absolute;
+	filter: blur(1px);
+	overflow: hidden;
+	height: 700px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	opacity: 50%;
+}
