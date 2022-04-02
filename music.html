@@ -58,31 +58,23 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.button {
-  position: relative;
+.buttontoggle {
+  position: absolute;
   display: inline-block;
   width: 34px;
   height: 34px;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: .4s;
+  left: 75px;
+  top: 10px;
 }
 
 .button input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+  visibility: hidden;
 }
 
-.button {
-  position: relative;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-}
-
-input:checked + .button {
+input:checked + .buttontoggle {
   background-color: #2196F3;
 }
 </style>
@@ -96,11 +88,9 @@ input:checked + .button {
 
 <label class="button">
   <input type="checkbox" id="musicMute" onclick="musicVolume()">
-  <span class="button"></span>
+  <span class="buttontoggle"></span>
 </label>
 
-<input type="button" value="Mute Music" onclick="muteMusic()" />
-<input type="button" value="Unmute Music" onclick="unmuteMusic()" />
 
 <audio id="Music">
   <source src="http://sndup.net/gkc3/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
