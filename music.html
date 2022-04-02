@@ -66,8 +66,6 @@ input:checked + .slider:before {
   <span class="slider round"></span>
 </label>
 
-<input type="button" value="Play Music" onclick="playMusic()" />
-<input type="button" value="Pause Music" onclick="pauseMusic()" />
 <input type="button" value="Mute Music" onclick="muteMusic()" />
 <input type="button" value="Unmute Music" onclick="unmuteMusic()" />
 
@@ -78,14 +76,14 @@ input:checked + .slider:before {
 </audio>
 
 <script>
+var music = document.getElementById("Music");
+music.play();
+music.volume = 1;
 
-var music = document.getElementById("Music"); 
 function muteMusic(){
-  var music = music
   music.volume = 0;
   }
 function unmuteMusic(){
-  var music = music
   music.volume = 1;
   }
 
