@@ -3,6 +3,14 @@
 <body>
 
 <style>
+.musicplayer {
+  width: 120px;
+  height: 35px;
+  border: 5px solid black;
+  border-radius: 34px;
+  padding: 2px;
+}
+
 .playtoggle {
   position: relative;
   display: inline-block;
@@ -12,6 +20,7 @@
   cursor: pointer;
   background-color: #ccc;
   transition: .4s;
+  top: 0px;
 }
 
 .play input { 
@@ -24,28 +33,24 @@ input:checked + .playtoggle {
 
 .button {
   position: relative;
-  display: inline-block;
   width: 5px;
   height: 50px;
   left: 5px;
+  border: 1px solid green;
 }
 
 .button input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+  visibility: hidden;
 }
 
 .bslider {
   position: absolute;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
   transition: .4s;
+  width: 5px;
+  height: 30px;
+  border: 1px solid blue;
 }
 
 .bslider:before {
@@ -81,27 +86,30 @@ input:checked + .bslider:before {
 .bslider.round:before {
   border-radius: 50%;
 }
-}
 </style>
 </head>
 <body>
 
-<label class="play">
-  <input type="checkbox" id="musicToggle" onclick="musicPlayer()" checked>
-  <span class="playtoggle"></span>
-</label>
+<div class="musicplayer">
 
-<label class="button">
-  <input type="checkbox" id="musicMute" onclick="musicVolume()" checked>
-  <span class="bslider round"></span>
-</label>
+  <label class="play">
+    <input type="checkbox" id="musicToggle" onclick="musicPlayer()" checked>
+    <span class="playtoggle"></span>
+  </label>
+
+  <label class="button">
+    <input type="checkbox" id="musicMute" onclick="musicVolume()" checked>
+    <span class="bslider round"></span>
+  </label>
 
 
-<audio id="Music">
-  <source src="http://sndup.net/gkc3/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+  <audio id="Music">
+    <source src="http://sndup.net/gkc3/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
-  Your browser does not support the <code>audio</code> element.
-</audio>
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+
+</div>
 
 <script>
 var music = document.getElementById("Music");
