@@ -4,7 +4,7 @@
 
 <style>
 .musicplayer {
-  width: 90px;
+  width: 70px;
   height: 35px;
   border: 5px solid black;
   border-radius: 34px;
@@ -33,9 +33,10 @@ input:checked + .playtoggle {
 
 .button {
   position: relative;
-  width: 5px;
-  height: 50px;
-  left: 5px;
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border: 1px green solid;
 }
 
 .button input { 
@@ -49,6 +50,7 @@ input:checked + .playtoggle {
   transition: .4s;
   width: 5px;
   height: 34px;
+  border-radius: 34px;
 }
 
 .bslider:before {
@@ -56,11 +58,12 @@ input:checked + .playtoggle {
   content: "";
   height: 15px;
   width: 15px;
-  bottom: 2px;
+  bottom: 4px;
   left: -5px;
   background-color: gray;
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 50%;
 }
 
 input:checked + .bslider {
@@ -76,14 +79,6 @@ input:checked + .bslider:before {
   -ms-transform: translateY(-12px);
   transform: translateY(-12px);
 }
-
-.bslider.round {
-  border-radius: 34px;
-}
-
-.bslider.round:before {
-  border-radius: 50%;
-}
 </style>
 </head>
 <body>
@@ -97,7 +92,7 @@ input:checked + .bslider:before {
 
   <label class="button">
     <input type="checkbox" id="musicMute" onclick="musicVolume()" checked>
-    <span class="bslider round"></span>
+    <span class="bslider"></span>
   </label>
 
 
