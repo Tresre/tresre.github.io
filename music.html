@@ -58,24 +58,65 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.buttontoggle {
-  position: absolute;
+.button {
+  position: relative;
   display: inline-block;
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
-  background-color: #ccc;
-  transition: .4s;
-  left: 75px;
-  top: 10px;
+  width: 5px;
+  height: 50px;
+  left: 5px;
 }
 
 .button input { 
-  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-input:checked + .buttontoggle {
+.bslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.bslider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  bottom: 3px;
+  left: -6px;
+  background-color: gray;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .bslider {
   background-color: #2196F3;
+}
+
+input:focus + .bslider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .bslider:before {
+  -webkit-transform: translateY(-26px);
+  -ms-transform: translateY(-26px);
+  transform: translateY(-26px);
+}
+
+.bslider.round {
+  border-radius: 34px;
+}
+
+.bslider.round:before {
+  border-radius: 50%;
+}
 }
 </style>
 </head>
@@ -87,8 +128,8 @@ input:checked + .buttontoggle {
 </label>
 
 <label class="button">
-  <input type="checkbox" id="musicMute" onclick="musicVolume()">
-  <span class="buttontoggle"></span>
+  <input type="checkbox" id="musicMute" onclick="musicVolume()" checked>
+  <span class="bslider round"></span>
 </label>
 
 
