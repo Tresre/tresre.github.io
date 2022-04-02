@@ -1,3 +1,3 @@
 # tresre.github.io
 
-Personal made website using HTML, CSS, JS, and Typed.js Library.
+Personal website made using HTML, CSS, and JS, and the Typed.js and Particles.js Libraries.
