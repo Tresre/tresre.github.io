@@ -5,16 +5,24 @@
 <style>
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 html {
-  background-color: white;
+  background-color: black;
 }
-.songChoice {
+.songname {
   text-align: center;
-  position: relative;
-  font-size: 20px; 
+  position: absolute;
+  font-size: 20px;
   text-decoration: none;
   font-family: Source Code Pro;
   font-weight: 600;
-  color: #969696;
+  color: #ffffff;
+  top: 20px;
+  right: 10px;
+  width: 130px;
+  height: 55px;
+  margin: auto;
+  padding: 1px;
+  border: 1px solid green;
+  
 }
 .musicplayer {
   position: fixed;
@@ -100,7 +108,6 @@ input:checked + .bslider:before {
 </style>
 </head>
 <body>
-<span id="songChoice" class"songChoice"></span>
 
 <div class="musicplayer">
   <label class="play">
@@ -112,8 +119,10 @@ input:checked + .bslider:before {
     <input class="bslider" type="checkbox" id="musicMute" onclick="musicVolume()" checked>
     <span class="bslider"></span>
   </label>
-  <span id="songChoice"></span>
+  
+  <span id="songChoice" class="songname"></span>
 
+</div>
 
   <audio id="Kokomo">
     <source src="http://sndup.net/g635/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
@@ -132,8 +141,6 @@ input:checked + .bslider:before {
 
     Your browser does not support the <code>audio</code> element.
   </audio>
-
-</div>
 
 <script>
 
