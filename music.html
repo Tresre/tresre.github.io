@@ -7,6 +7,20 @@
 html {
   background-color: black;
 }
+.vibing {
+  text-align: center;
+  position: absolute;
+  font-size: 10px;
+  font-family: Source Code Pro;
+  font-weight: 300;
+  color: #ffffff;
+  top: -4px;
+  right: 16px;
+  width: 130px;
+  height: 15px;
+  overflow: hidden;  
+  border-radius: 7px;
+}
 .songname {
   text-align: center;
   position: absolute;
@@ -14,11 +28,11 @@ html {
   font-family: Source Code Pro;
   font-weight: 600;
   color: #ffffff;
-  top: 19px;
+  top: 18px;
   right: 10px;
-  width: 130px;
+  width: 125px;
   height: 55px;
-  border: 3px solid #2196F3;
+  border: 5px solid #2196F3;
   overflow: hidden;  
   border-radius: 7px;
 }
@@ -118,22 +132,25 @@ input:checked + .bslider:before {
     <span class="bslider"></span>
   </label>
   
+  <h1 class="vibing">What I'm Vibing</h1>
   <span id="songChoice" class="songname" onclick="skipSong()" style="cursor: pointer;"></span>
 
 </div>
+
+
 
   <audio id="Down In Kokomo">
     <source src="http://sndup.net/g635/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
     Your browser does not support the <code>audio</code> element.
   </audio>
-  
+
   <audio id="Send Me An Angel">
     <source src="http://sndup.net/mkvy/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
     Your browser does not support the <code>audio</code> element.
   </audio>
-  
+
   <audio id="Gotta Get Up">
     <source src="http://sndup.net/xy7q/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
