@@ -121,38 +121,80 @@ input:checked + .bslider:before {
 </head>
 <body>
 
-<div class="musicplayer">
-  <label class="play">
-    <input type="checkbox" id="musicToggle" onclick="musicPlayer()">
-    <span class="playtoggle"><img src="https://media4.giphy.com/media/XaejLonqk19jDugJbq/giphy.gif?" alt="" style="width:90px; height:90px; border-radius: 90px; object-fit: cover;"></span>
-  </label>
+  <div class="musicplayer">
+    <label class="play">
+      <input type="checkbox" id="musicToggle" onclick="musicPlayer()">
+      <span class="playtoggle"><img src="https://media4.giphy.com/media/XaejLonqk19jDugJbq/giphy.gif?" alt="" style="width:90px; height:90px; border-radius: 90px; object-fit: cover;"></span>
+    </label>
 
-  <label class="button">
-    <input class="bslider" type="checkbox" id="musicMute" onclick="musicVolume()" checked>
-    <span class="bslider"></span>
-  </label>
+    <label class="button">
+      <input class="bslider" type="checkbox" id="musicMute" onclick="musicVolume()" checked>
+      <span class="bslider"></span>
+    </label>
+
+    <h1 class="vibing">What I'm Vibing</h1>
+    <span id="songChoice" class="songname" onclick="skipSong()" style="cursor: pointer;"></span>
+
+  </div>
+
+
+
+  <audio id="All About You">
+    <source src="assets/mp3/AllAboutYou.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+
+  <audio id="All Alone">
+    <source src="assets/mp3/AllAlone.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+
+  <audio id="Heat Waves">
+    <source src="assets/mp3/HeatWaves.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+
+    Your browser does not support the <code>audio</code> element.
+  </audio>
   
-  <h1 class="vibing">What I'm Vibing</h1>
-  <span id="songChoice" class="songname" onclick="skipSong()" style="cursor: pointer;"></span>
-
-</div>
-
-
-
-  <audio id="Down In Kokomo">
-    <source src="http://sndup.net/g635/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+  <audio id="Live In The Moment">
+    <source src="assets/mp3/LiveInTheMoment.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
     Your browser does not support the <code>audio</code> element.
   </audio>
-
-  <audio id="Send Me An Angel">
-    <source src="http://sndup.net/mkvy/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+  
+  <audio id="Nice To Meet Ya">
+    <source src="assets/mp3/NiceToMeetYa.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
     Your browser does not support the <code>audio</code> element.
   </audio>
+  
+  <audio id="No Rest For The Wicked">
+    <source src="assets/mp3/NoRestForTheWicked.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
-  <audio id="Gotta Get Up">
-    <source src="http://sndup.net/xy7q/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  
+  <audio id="Only Human">
+    <source src="assets/mp3/OnlyHuman.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  
+  <audio id="Sunflower">
+    <source src="assets/mp3/Sunflower.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  
+  <audio id="Talk">
+    <source src="assets/mp3/Talk.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  
+  <audio id="Thunder">
+    <source src="assets/mp3/Thunder.mp3" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
     Your browser does not support the <code>audio</code> element.
   </audio>
@@ -167,9 +209,16 @@ function skipSong(){
   var setmusic = music
   setmusic.pause();
   var playlist = [
-  "Down In Kokomo",
-  "Send Me An Angel",
-  "Gotta Get Up"
+  "All About You",
+  "All Alone",
+  "Heat Waves",
+  "Live In The Moment",
+  "Nice To Meet Ya",
+  "No Rest For The Wicked",
+  "Only Human",
+  "Sunflower",
+  "Talk",
+  "Thunder"
   ];
 
   var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
@@ -184,9 +233,16 @@ function skipSong(){
 
 function chooseSong(){
   var playlist = [
-  "Down In Kokomo",
-  "Send Me An Angel",
-  "Gotta Get Up"
+  "All About You",
+  "All Alone",
+  "Heat Waves",
+  "Live In The Moment",
+  "Nice To Meet Ya",
+  "No Rest For The Wicked",
+  "Only Human",
+  "Sunflower",
+  "Talk",
+  "Thunder"
   ];
 
   var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
