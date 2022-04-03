@@ -160,6 +160,10 @@ function musicPlayer() {
   if (checkBox.checked == true){
     setmusic.play();
     setmusic.volume = 1;
+    setmusic.onended = function() {
+      alert("The audio has ended");
+      skipSong()
+    };
   } else {
     setmusic.pause();
   }
