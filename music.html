@@ -122,19 +122,23 @@ input:checked + .bslider:before {
 </div>
 
 <script>
-var playlist = [
+
+chooseSong()
+
+function chooseSong(){
+  var playlist = [
   "Music1",
   "Music2",
   "Music3"
-];
+  ];
 
-var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
+  var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
 
+  var music = document.getElementById(randomItem);
 
-var music = document.getElementById(randomItem);
-
-music.play();
-music.volume = 1;
+  music.play();
+  music.volume = 1;
+  }
 
 function muteMusic(){
   music.volume = 0;
