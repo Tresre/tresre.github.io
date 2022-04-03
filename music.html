@@ -8,9 +8,9 @@ html {
 }
 
 .musicplayer {
-  width: 65px;
-  height: 35px;
-  border-radius: 34px;
+  width: 150px;
+  height: 75px;
+  border-radius: 70px;
   padding: 2px;
   background-color: #1e1e1e;
   border: 5px solid #1e1e1e;
@@ -19,9 +19,9 @@ html {
 .playtoggle {
   position: relative;
   display: inline-block;
-  width: 34px;
-  height: 34px;
-  border-radius: 34px;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
   cursor: pointer;
   background-color: #ccc;
   transition: .4s;
@@ -54,18 +54,18 @@ input:checked + .playtoggle {
   cursor: pointer;
   background-color: #ccc;
   transition: .4s;
-  width: 5px;
-  height: 35px;
+  width: 10px;
+  height: 70px;
   border-radius: 34px;
 }
 
 .bslider:before {
   position: absolute;
   content: "";
-  height: 15px;
-  width: 15px;
+  height: 25px;
+  width: 25px;
   bottom: 4px;
-  left: -5px;
+  left: -7px;
   background-color: gray;
   -webkit-transition: .4s;
   transition: .4s;
@@ -92,7 +92,7 @@ input:checked + .bslider:before {
 <div class="musicplayer">
   <label class="play">
     <input type="checkbox" id="musicToggle" onclick="musicPlayer()" checked>
-    <span class="playtoggle"><img src="https://media4.giphy.com/media/XaejLonqk19jDugJbq/giphy.gif?cid=790b761144b0ea6d458d7c20c598e127d1a14d493c2de24d&rid=giphy.gif&ct=s" alt="" style="width:34px;height:34px;object-fit: cover; border-radius: 34px;"></span>
+    <span class="playtoggle"><img src="https://media4.giphy.com/media/XaejLonqk19jDugJbq/giphy.gif?cid=790b761144b0ea6d458d7c20c598e127d1a14d493c2de24d&rid=giphy.gif&ct=s" alt="" style="width:70px;height:70px;object-fit: cover; border-radius: 70px;"></span>
   </label>
 
   <label class="button">
