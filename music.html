@@ -16,10 +16,11 @@ html {
   color: #ffffff;
   top: 19px;
   right: 10px;
-  width: 135px;
+  width: 130px;
   height: 55px;
   border: 3px solid #2196F3;
-  
+  overflow: hidden;  
+  border-radius: 7px;
 }
 .musicplayer {
   position: fixed;
@@ -121,7 +122,7 @@ input:checked + .bslider:before {
 
 </div>
 
-  <audio id="Kokomo">
+  <audio id="Down In Kokomo">
     <source src="http://sndup.net/g635/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
     Your browser does not support the <code>audio</code> element.
@@ -147,7 +148,7 @@ chooseSong()
 
 function chooseSong(){
   var playlist = [
-  "Kokomo",
+  "Down In Kokomo",
   "Send Me An Angel",
   "Gotta Get Up"
   ];
