@@ -3,10 +3,19 @@
 <body>
 
 <style>
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 html {
-  background-color: black;
+  background-color: white;
 }
-
+.songChoice {
+  text-align: center;
+  position: relative;
+  font-size: 20px; 
+  text-decoration: none;
+  font-family: Source Code Pro;
+  font-weight: 600;
+  color: #969696;
+}
 .musicplayer {
   position: fixed;
   bottom: 10px;
@@ -91,7 +100,7 @@ input:checked + .bslider:before {
 </style>
 </head>
 <body>
-
+<span id="songChoice" class"songChoice"></span>
 
 <div class="musicplayer">
   <label class="play">
@@ -103,7 +112,7 @@ input:checked + .bslider:before {
     <input class="bslider" type="checkbox" id="musicMute" onclick="musicVolume()" checked>
     <span class="bslider"></span>
   </label>
-  <span id="songChoice">test</span>
+  <span id="songChoice"></span>
 
 
   <audio id="Kokomo">
@@ -136,11 +145,12 @@ function chooseSong(){
   var playlist = [
   "Kokomo",
   "Send Me An Angel",
-  "Music3"
+  "Gotta Get Up"
   ];
 
   var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
   songChoice = (randomItem);
+  document.getElementById("songChoice").innerHTML = songChoice;
 
   music = document.getElementById(randomItem);
 
