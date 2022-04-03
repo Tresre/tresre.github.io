@@ -123,6 +123,7 @@ input:checked + .bslider:before {
 
 <script>
 
+var music;
 chooseSong()
 
 function chooseSong(){
@@ -134,7 +135,7 @@ function chooseSong(){
 
   var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
 
-  var music = document.getElementById(randomItem);
+  music = document.getElementById(randomItem);
 
   music.play();
   music.volume = 1;
@@ -149,20 +150,22 @@ function unmuteMusic(){
 
 function musicVolume() {
   var checkBox = document.getElementById("musicMute");
+  var setmusic = music
   if (checkBox.checked == true){
-    music.volume = 1;
+    setmusic.volume = 1;
   } else {
-    music.volume = 0;
+    setmusic.volume = 0;
   }
 }
 
 function musicPlayer() {
   var checkBox = document.getElementById("musicToggle");
+  var setmusic = music
   if (checkBox.checked == true){
-    music.play();
-    music.volume = 1;
+    setmusic.play();
+    setmusic.volume = 1;
   } else {
-    music.pause();
+    setmusic.pause();
   }
 }
 </script>
