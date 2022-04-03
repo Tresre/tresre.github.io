@@ -118,7 +118,7 @@ input:checked + .bslider:before {
     <span class="bslider"></span>
   </label>
   
-  <span id="songChoice" class="songname"></span>
+  <span id="songChoice" class="songname" onclick="skipSong()" style="cursor: pointer;"></span>
 
 </div>
 
@@ -145,6 +145,24 @@ input:checked + .bslider:before {
 var music;
 var songChoice;
 chooseSong()
+
+function skipSong(){
+  var setmusic = music
+  setmusic.pause();
+  var playlist = [
+  "Down In Kokomo",
+  "Send Me An Angel",
+  "Gotta Get Up"
+  ];
+
+  var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
+  songChoice = (randomItem);
+  document.getElementById("songChoice").innerHTML = songChoice;
+
+  music = document.getElementById(randomItem);
+  music.play();
+  
+}
 
 function chooseSong(){
   var playlist = [
