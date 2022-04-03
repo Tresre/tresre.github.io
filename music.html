@@ -101,7 +101,19 @@ input:checked + .bslider:before {
   </label>
 
 
-  <audio id="Music">
+  <audio id="Music1">
+    <source src="http://sndup.net/gkc3/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  
+  <audio id="Music2">
+    <source src="http://sndup.net/gkc3/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
+
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  
+  <audio id="Music3">
     <source src="http://sndup.net/gkc3/d" type="audio/mpeg" autostart="false" width="500" height="90" loop="true">
 
     Your browser does not support the <code>audio</code> element.
@@ -110,7 +122,17 @@ input:checked + .bslider:before {
 </div>
 
 <script>
-var music = document.getElementById("Music");
+var playlist = [
+  "Music1",
+  "Music2",
+  "Music3"
+];
+
+var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
+
+
+var music = document.getElementById(randomItem);
+
 music.play();
 music.volume = 1;
 
