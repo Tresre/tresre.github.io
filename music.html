@@ -103,6 +103,7 @@ input:checked + .bslider:before {
     <input class="bslider" type="checkbox" id="musicMute" onclick="musicVolume()" checked>
     <span class="bslider"></span>
   </label>
+  <span id="songChoice">test</span>
 
 
   <audio id="Kokomo">
@@ -128,6 +129,7 @@ input:checked + .bslider:before {
 <script>
 
 var music;
+var songChoice;
 chooseSong()
 
 function chooseSong(){
@@ -138,6 +140,7 @@ function chooseSong(){
   ];
 
   var randomItem = playlist[Math.floor(Math.random()*playlist.length)];
+  songChoice = (randomItem);
 
   music = document.getElementById(randomItem);
 
