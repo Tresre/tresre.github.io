@@ -113,6 +113,7 @@ function skipSong(){
   music = document.getElementById(randomItem);
   music.play();
   music.currentTime = 0;
+  music.onended = skipSong();
   
 }
 
@@ -162,10 +163,7 @@ function musicPlayer() {
   if (checkBox.checked == true){
     setmusic.play();
     setmusic.volume = 1;
-    setmusic.onended = function() {
-      alert("The audio has ended");
-      skipSong()
-    };
+    setmusic.onended = skipSong();
   } else {
     setmusic.pause();
   }
