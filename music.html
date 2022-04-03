@@ -8,10 +8,13 @@ html {
 }
 
 .musicplayer {
-  width: 130px;
-  height: 75px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 270px;
+  height: 90px;
   border-radius: 70px;
-  padding: 2px;
+  padding: 5px;
   background-color: #1e1e1e;
   border: 5px solid #1e1e1e;
 }
@@ -19,9 +22,9 @@ html {
 .playtoggle {
   position: relative;
   display: inline-block;
-  width: 70px;
-  height: 70px;
-  border-radius: 70px;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
   cursor: pointer;
   background-color: #ccc;
   transition: .4s;
@@ -89,10 +92,11 @@ input:checked + .bslider:before {
 </head>
 <body>
 
+
 <div class="musicplayer">
   <label class="play">
     <input type="checkbox" id="musicToggle" onclick="musicPlayer()" checked>
-    <span class="playtoggle"><img src="https://media4.giphy.com/media/XaejLonqk19jDugJbq/giphy.gif?" alt="" style="width:70px;height:70px;object-fit: cover; border-radius: 70px;"></span>
+    <span class="playtoggle"><img src="https://media4.giphy.com/media/XaejLonqk19jDugJbq/giphy.gif?" alt="" style="width:90px; height:90px; border-radius: 90px; object-fit: cover;"></span>
   </label>
 
   <label class="button">
