@@ -239,18 +239,9 @@
       }
       iframe {
         overflow: hidden;
-	pointer-events:none;
+        pointer-events:none;
       }
    </style>
-   <script>
-     function autoScroll() {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-     }
-   </script>
    <head>
       <meta charset="UTF-8">
       <title>Tresre.dev</title>
@@ -383,5 +374,13 @@
      var today = new Date();
      let year = today.getFullYear();
      document.getElementById("year").innerHTML = year;
+     
+     function autoScroll() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+     }
    </script>
 </html>
