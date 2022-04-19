@@ -1,0 +1,264 @@
+html {
+		overflow: overlay;
+		scroll-behavior: smooth;
+		background-color: #1e1e1e;
+}
+	
+*::-webkit-scrollbar {
+		width: 10px;
+}
+	
+*::-webkit-scrollbar-track {
+		opacity: 1;
+}
+	
+*::-webkit-scrollbar-thumb {
+		background-color: #888;
+		border-radius: 0.5rem;
+}
+	
+*::-webkit-scrollbar-thumb:hover {
+		background-color: #575757;
+}
+	
+.blackbackground {
+		background-color: #010409;
+		height: 800px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -2;
+}
+	
+.graybackground {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 800px;
+}
+	
+bold {
+		color: #a30b00;
+}
+	
+.typecontainer {
+		height: 100%;
+}
+	
+.typecenter {
+		width: 99.7%;
+		text-align: center;
+		margin: 0px;
+		position: absolute;
+		top: 45%;
+		font-size: 30px;
+		left: 0px;
+		font-family: sans-serif;
+		font-weight: 600;
+		color: white;
+}
+	
+.staticwelcome {
+		width: 100%;
+		text-align: center;
+		margin: 0px;
+		position: absolute;
+		top: 38%;
+		font-size: 40px;
+		left: 0px;
+		font-family: sans-serif;
+		font-weight: 600;
+		color: white;
+}
+	
+.socials {
+		position: relative;
+		top: 35px;
+		display: table;
+		text-align: center;
+		margin: auto;
+		padding-bottom: 15px;
+}
+	
+.madeby {
+		text-align: center;
+		position: relative;
+		font-size: 20px;
+		text-decoration: none;
+		font-family: Source Code Pro;
+		font-weight: 600;
+		color: #969696;
+}
+	
+.discord {
+		position: relative;
+		bottom: 175px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		width: 30%;
+		width: 240px;
+		max-width: 410px;
+		height: 90px;
+		border-radius: 500px;
+}
+	
+.header {
+		z-index: 2;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 1.5rem;
+		display: flex;
+		background: #262626;
+		background: transparent;
+		border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+		background-color: rgba(38, 38, 38, .9);
+}
+	
+@supports (backdrop-filter: blur(15px)) {
+	.header {
+			z-index: 2;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding: 1.5rem;
+			display: flex;
+			background: #262626;
+			background: transparent;
+			border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+			backdrop-filter: blur(15px);
+	}
+}
+	
+.navbar-nav {
+		font-family: Comfortaa;
+		font-size: 20px;
+		padding: 15px;
+		max-padding: 15px;
+		padding-left: 1%;
+		padding-right: 1%;
+		max-padding-left: 1px;
+		max-padding-right: 1px;
+		transition: all .1s linear;
+}
+	
+.navbar-button {
+		color: #969696;
+		text-decoration: none;
+}
+	
+.navbar-nav:hover {
+		filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+		transform: scale(1.075) rotate(1deg);
+}
+	
+.navbar-nav:active {
+		transform: scale(0.95);
+}
+	
+.logo {
+		animation-name: logo-animation;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		display: inline-block;
+		transform: scale(1);
+		transition: all .2s linear;
+		padding-right: 2%;
+		padding-left: 2%;
+}
+	
+.logo:hover {
+		animation-name: logo-animation;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+}
+	
+.logo:active {
+		animation-name: logo-animation;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.2));
+}
+	
+@keyframes logo-animation {
+		0% {
+			transform: rotate(3deg);
+		}
+		50% {
+			transform: rotate(-3deg);
+		}
+		100% {
+			transform: rotate(3deg);
+		}
+}
+	
+.portfolio {
+		position: abosolute;
+		top: 20px;
+		padding: 5px;
+		padding-top: 10px;
+		display: table;
+		font-family: Source Code Pro;
+		width: 90%;
+		max-width: 700px;
+		text-align: center;
+		margin: auto;
+}
+	
+.portfolio-box {
+		background-color: #13151a;
+		color: white;
+		padding: 12px;
+		border-radius: 5px;
+		font-size: 15px;
+		text-align: left;
+		transition: all .2s linear;
+}
+	
+.portfolio-box-container {
+		padding: 10px;
+		display: inline-block;
+		width: 10%;
+		max-width: 370px;
+		min-width: 270px;
+}
+	
+.portoflio-text-container {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+}
+	
+.portfolio-title {
+		text-align: center;
+		font-size: 40px;
+		font-family: Source Code Pro;
+		font-weight: 600;
+		color: #969696;
+}
+	
+.portfolio-title-container {
+		display: inline-block;
+}
+	
+.portfolio-box:hover {
+		transform: scale(1.05) rotate(0.75deg);
+}
+	
+.portfolio-box:active {
+		transform: scale(0.95);
+}
+	
+iframe {
+		overflow: hidden;
+		pointer-events: none;
+}
